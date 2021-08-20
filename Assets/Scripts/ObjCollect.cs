@@ -17,14 +17,15 @@ public class ObjCollect : MonoBehaviour
         
     }
 
-    public void onTriggerEnter(Collider other)
+    void onTriggerEnter(Collider other)
     {
         Debug.Log("Chomp chomp");
         /*
-        if(other.gameObject.CompareTag("Object"))
+        if(other.gameObject.CompareTag("Collectible"))
         {
             other.transform.parent = this.gameObject.transform;
         }
         */
     }
+
 }

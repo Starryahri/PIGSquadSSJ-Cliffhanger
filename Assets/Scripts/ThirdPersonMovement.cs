@@ -50,4 +50,35 @@ public class ThirdPersonMovement : MonoBehaviour
         }
         controller.Move(velocity * Time.deltaTime);
     }
+
+    // this script pushes all rigidbodies that the character touches
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        
+        Rigidbody body = hit.collider.attachedRigidbody;
+
+        if (hit.gameObject.CompareTag("Collectible"))
+        {
+            Debug.Log("Chomp");
+            hit.transform.parent = this.gameObject.transform;
+            hit.transform.parent = GameObject.Find("Backpack").transform;
+            hit.transform.localPosition = new Vector3(0f, 0f, 0f);
+            body.isKinematic = false;
+            body.useGravity = true;
+            //hit.transform.position = this.gameObject.transform.position + new Vector3(5f, 2f, 0f);
+                
+        }
+
+        // no rigidbody
+        if (body == null || body.isKinematic)
+        {
+            return;
+        }
+
+        // We dont want to push objects below us
+        if (hit.moveDirection.y < -0.3)
+        {
+            return;
+        }
+    }
 }
