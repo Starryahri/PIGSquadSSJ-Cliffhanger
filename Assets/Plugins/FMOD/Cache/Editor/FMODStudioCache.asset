@@ -42,6 +42,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-1171926904155815790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Plugins/FMOD/Audio Banks/CarGoat/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637656097544723306
+  FileSizes:
+  - Name: Desktop
+    Value: 2046592
+  Exists: 1
 --- !u!114 &-164466576807686720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,16 +98,16 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 1777056746042451547}
-  - {fileID: -6537400601574327316}
+  - {fileID: 5588142693425680096}
+  - {fileID: -1171926904155815790}
   EditorEvents:
-  - {fileID: -164466576807686720}
+  - {fileID: 8582250134037798128}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -6537400601574327316}
+  - {fileID: -1171926904155815790}
   StringsBanks:
-  - {fileID: 1777056746042451547}
-  stringsBankWriteTime: 637653338177457202
+  - {fileID: 5588142693425680096}
+  stringsBankWriteTime: 637656097544728415
   cacheVersion: 8
 --- !u!114 &1777056746042451547
 MonoBehaviour:
@@ -109,3 +129,46 @@ MonoBehaviour:
   - Name: Desktop
     Value: 746
   Exists: 1
+--- !u!114 &5588142693425680096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Plugins/FMOD/Audio Banks/CarGoat/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637656097544728415
+  FileSizes:
+  - Name: Desktop
+    Value: 746
+  Exists: 1
+--- !u!114 &8582250134037798128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GoatSong
+  m_EditorClassIdentifier: 
+  Path: event:/GoatSong
+  guid: af3ccfb2e6577242a6d40fc9e8777d5b
+  Banks:
+  - {fileID: -1171926904155815790}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0

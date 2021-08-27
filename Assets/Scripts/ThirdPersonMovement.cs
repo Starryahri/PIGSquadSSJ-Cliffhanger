@@ -61,7 +61,7 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             Debug.Log("Chomp");
             hit.transform.parent = this.gameObject.transform;
-            hit.transform.parent = GameObject.Find("Backpack").transform;
+            hit.transform.parent = GameObject.Find("TrueBackpack").transform;
             hit.transform.localPosition = new Vector3(0f, 0f, 0f);
             body.isKinematic = false;
             body.useGravity = true;
