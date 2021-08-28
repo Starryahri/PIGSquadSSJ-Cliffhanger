@@ -7,6 +7,7 @@ public class ThirdPersonMovement : MonoBehaviour
 {
     //motor that drives character
     public CharacterController controller;
+    public Animator anim;
     public Transform cam;
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -20,6 +21,10 @@ public class ThirdPersonMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    void Start()
+    {
+        anim = GetComponentInChildren<Animator>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -36,6 +41,7 @@ public class ThirdPersonMovement : MonoBehaviour
         
         if(direction.magnitude >= 0.1f)
         {
+            anim.SetInteger("Run", 0);
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
@@ -43,10 +49,19 @@ public class ThirdPersonMovement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
+        else{
+            anim.SetInteger("Run", 1);
+        }
+
+
 
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            anim.SetInteger("GoatJump", 1);
+        }
+        else{
+            anim.SetInteger("GoatJump", 0);
         }
         controller.Move(velocity * Time.deltaTime);
     }
