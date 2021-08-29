@@ -46,8 +46,8 @@ public class ThirdPersonMovement : MonoBehaviour
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
-        //go = GameObject.Find("InsideTheBackpack");
-        go = GameObject.Find("TrueBackpack");
+        go = GameObject.Find("InsideTheBackpack");
+        //go = GameObject.Find("TrueBackpack");
         _vCamControl = myVCam.GetComponent<CinemachineFreeLook>();
     }
     // Update is called once per frame
@@ -75,8 +75,8 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             if(airTime > minSurviveFall)
             {
-                //GameObject.Find("InsideTheBackpack").transform.DetachChildren();
-                GameObject.Find("TrueBackpack").transform.DetachChildren();
+                GameObject.Find("InsideTheBackpack").transform.DetachChildren();
+                //GameObject.Find("TrueBackpack").transform.DetachChildren(); will delete soon
             }
             airTime = 0;
         }
@@ -116,8 +116,10 @@ public class ThirdPersonMovement : MonoBehaviour
         // Updates the Text in the UI Collectible Panel
         if (this.UICollectibles != null)
         {
-            this.UICollectibles.text = trashCount.ToString();
+            //this.UICollectibles.text = trashCount.ToString();
+            this.UICollectibles.text = backpackCount.ToString();
         }
+
         // Updates the Text in the UI Timer Panel
         if (this.UITimer != null)
         {
@@ -126,6 +128,7 @@ public class ThirdPersonMovement : MonoBehaviour
             minutes = minutes / 60;
             seconds = (int)Timer;
             seconds = seconds % 60;
+
             if (seconds < 10)
             {
                 this.UITimer.text = minutes + ":0" + seconds;
@@ -150,8 +153,8 @@ public class ThirdPersonMovement : MonoBehaviour
             Debug.Log("Chomp");
             hit.transform.parent = this.gameObject.transform;
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Interaction/ItemCollect", GetComponent<Transform>().position);
-            //hit.transform.parent = GameObject.Find("InsideTheBackpack").transform;
-            hit.transform.parent = GameObject.Find("TrueBackpack").transform;
+            hit.transform.parent = GameObject.Find("InsideTheBackpack").transform;
+            //hit.transform.parent = GameObject.Find("TrueBackpack").transform;
             hit.transform.localPosition = new Vector3(0f, 0f, 0f);
             body.isKinematic = false;
             body.useGravity = true;
