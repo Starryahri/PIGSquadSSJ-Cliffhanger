@@ -18,6 +18,8 @@ public class ThirdPersonMovement : MonoBehaviour
     public bool isGrounded;
     private GameObject go;
 
+    public GameObject Player;
+    public GameObject RespawnPoint;
     //fall damage stuff
     public float minSurviveFall = 2f;
     public float airTime = 0;
@@ -36,7 +38,8 @@ public class ThirdPersonMovement : MonoBehaviour
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
-        go = GameObject.Find("InsideTheBackpack");
+        //go = GameObject.Find("InsideTheBackpack");
+        go = GameObject.Find("TrueBackpack");
         _vCamControl = myVCam.GetComponent<CinemachineFreeLook>();
     }
     // Update is called once per frame
@@ -64,7 +67,8 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             if(airTime > minSurviveFall)
             {
-                GameObject.Find("InsideTheBackpack").transform.DetachChildren();
+                //GameObject.Find("InsideTheBackpack").transform.DetachChildren();
+                GameObject.Find("TrueBackpack").transform.DetachChildren();
             }
             airTime = 0;
         }
@@ -111,13 +115,21 @@ public class ThirdPersonMovement : MonoBehaviour
             Debug.Log("Chomp");
             hit.transform.parent = this.gameObject.transform;
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Interaction/ItemCollect", GetComponent<Transform>().position);
-            hit.transform.parent = GameObject.Find("InsideTheBackpack").transform;
+            //hit.transform.parent = GameObject.Find("InsideTheBackpack").transform;
+            hit.transform.parent = GameObject.Find("TrueBackpack").transform;
             hit.transform.localPosition = new Vector3(0f, 0f, 0f);
             body.isKinematic = false;
             body.useGravity = true;
             //hit.transform.position = this.gameObject.transform.position + new Vector3(5f, 2f, 0f);
         }
 
+        if (hit.gameObject.CompareTag("KillBox"))
+        {
+            Debug.Log("WHAMO");
+            this.gameObject.transform.position = RespawnPoint.transform.position;
+            //GameObject go = Instantiate(RespawnParticles, Player.transform.position, Quaternion.identity) as GameObject;
+            //Destroy(go, 3f);
+        }
         // no rigidbody
         if (body == null || body.isKinematic)
         {
