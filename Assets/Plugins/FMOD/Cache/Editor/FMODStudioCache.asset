@@ -259,7 +259,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637657796917347144
+  lastModified: 637658001011877681
   FileSizes:
   - Name: Desktop
     Value: 2110912
@@ -319,7 +319,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637657796917352148
+  lastModified: 637658001011897700
   FileSizes:
   - Name: Desktop
     Value: 942

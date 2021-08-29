@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using Cinemachine;
+using UnityEngine.UI;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
@@ -32,7 +33,14 @@ public class ThirdPersonMovement : MonoBehaviour
     public float cameraZoomMult = 1;  //used in conjuction with item count to determine how far away
     private float turnSmoothVelocity;  //how fast to turn
     private Vector3 velocity;
-    
+
+    // Aspects for the UI for Information (Time passed and Trash collected)
+    public Text UICollectibles;
+    public int trashCount = 0;
+    public Text UITimer;
+    public float Timer = 0;
+    private int minutes = 0;
+    private int seconds = 0;
 
 
     void Start()
@@ -104,6 +112,33 @@ public class ThirdPersonMovement : MonoBehaviour
             anim.SetInteger("GoatJump", 0);
         }
         controller.Move(velocity * Time.deltaTime);
+
+        // Updates the Text in the UI Collectible Panel
+        if (this.UICollectibles != null)
+        {
+            this.UICollectibles.text = trashCount.ToString();
+        }
+        // Updates the Text in the UI Timer Panel
+        if (this.UITimer != null)
+        {
+            Timer = Time.time;
+            minutes = (int)Timer;
+            minutes = minutes / 60;
+            seconds = (int)Timer;
+            seconds = seconds % 60;
+            if (seconds < 10)
+            {
+                this.UITimer.text = minutes + ":0" + seconds;
+            }
+            else
+            {
+                this.UITimer.text = minutes + ":" + seconds;
+            }
+
+        }
+
+
+
     }
 
     void OnControllerColliderHit(ControllerColliderHit hit)
@@ -121,6 +156,9 @@ public class ThirdPersonMovement : MonoBehaviour
             body.isKinematic = false;
             body.useGravity = true;
             //hit.transform.position = this.gameObject.transform.position + new Vector3(5f, 2f, 0f);
+            
+            // Keeps track of trash collected
+            trashCount += 1;
         }
 
         if (hit.gameObject.CompareTag("KillBox"))
