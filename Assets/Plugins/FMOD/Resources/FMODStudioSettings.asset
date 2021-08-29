@@ -463,11 +463,11 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets/Plugins/FMOD/Audio Banks/CarGoat/CarGoat.fspro
-  sourceBankPath: Assets/Plugins/FMOD/Audio Banks/CarGoat/Build
+  sourceProjectPath: Assets/Plugins/FMOD/Audio Project/CarGoat/CarGoat.fspro
+  sourceBankPath: Assets/Plugins/FMOD/Audio Project/CarGoat/Build
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
-  ShowBankRefreshWindow: 1
+  ShowBankRefreshWindow: 0
   AutomaticEventLoading: 1
   BankLoadType: 0
   AutomaticSampleLoading: 0

@@ -38,8 +38,9 @@ public class ThirdPersonMovement : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
         velocity.y += gravity * Time.deltaTime;
-        
-        if(direction.magnitude >= 0.1f)
+
+
+        if (direction.magnitude >= 0.1f)
         {
             anim.SetInteger("Run", 0);
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
@@ -59,6 +60,8 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
             anim.SetInteger("GoatJump", 1);
+            anim.SetInteger("Run", 1);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Movement/Jump", GetComponent<Transform>().position);
         }
         else{
             anim.SetInteger("GoatJump", 0);
@@ -76,12 +79,13 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             Debug.Log("Chomp");
             hit.transform.parent = this.gameObject.transform;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Interaction/ItemCollect", GetComponent<Transform>().position);
             hit.transform.parent = GameObject.Find("TrueBackpack").transform;
             hit.transform.localPosition = new Vector3(0f, 0f, 0f);
             body.isKinematic = false;
             body.useGravity = true;
             //hit.transform.position = this.gameObject.transform.position + new Vector3(5f, 2f, 0f);
-                
+
         }
 
         // no rigidbody

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{d9f59497-f17a-46e6-8056-2270a3e87490}">
+		<property name="assetPath">
+			<value>Pencil B.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.23425000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2ffce4b6-114c-47e6-b110-2fb7f51da9af}</destination>
+		</relationship>
+	</object>
+</objects>
