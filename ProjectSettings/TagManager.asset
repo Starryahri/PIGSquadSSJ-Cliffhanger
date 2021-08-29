@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Object
   - Collectible
+  - KillBox
   layers:
   - Default
   - TransparentFX
