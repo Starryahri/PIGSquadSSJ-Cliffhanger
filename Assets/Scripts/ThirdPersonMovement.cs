@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using Cinemachine;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
@@ -9,29 +10,63 @@ public class ThirdPersonMovement : MonoBehaviour
     public CharacterController controller;
     public Animator anim;
     public Transform cam;
+    public GameObject myVCam;
+    private CinemachineFreeLook _vCamControl;
     public Transform groundCheck;
-    public float groundDistance = 0.4f;
     public LayerMask groundMask;
+    public float groundDistance = 0.4f;
+    public bool isGrounded;
+    private GameObject go;
+
+    //fall damage stuff
+    public float minSurviveFall = 2f;
+    public float airTime = 0;
 
     public float speed = 6f;
-    public float turnSmoothTime = 0.1f;
-    public float gravity = -9.81f;
+    public float turnSmoothTime = 0.1f; //Smoothout the rotation for player
+    public float gravity = -9.81f; 
     public float jumpHeight = 3f;
-    float turnSmoothVelocity;
-    Vector3 velocity;
-    bool isGrounded;
+    
+    public float cameraZoomMult = 1;  //used in conjuction with item count to determine how far away
+    private float turnSmoothVelocity;  //how fast to turn
+    private Vector3 velocity;
+    
+
 
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
+        go = GameObject.Find("InsideTheBackpack");
+        _vCamControl = myVCam.GetComponent<CinemachineFreeLook>();
     }
     // Update is called once per frame
     void Update()
     {
+        //This looks in backpack parent and counts the items inside
+        float backpackCount = go.transform.childCount;
+        Debug.Log(backpackCount);
+
+        _vCamControl.m_Orbits[1].m_Radius = 12 + (backpackCount); 
+
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
+        }
+
+        //Checks for fall time and then unparents objects
+        if(!isGrounded)
+        {
+            airTime += Time.deltaTime;
+        }
+
+        if(isGrounded)
+        {
+            if(airTime > minSurviveFall)
+            {
+                GameObject.Find("InsideTheBackpack").transform.DetachChildren();
+            }
+            airTime = 0;
         }
 
         float horizontal = Input.GetAxisRaw("Horizontal");
@@ -54,8 +89,6 @@ public class ThirdPersonMovement : MonoBehaviour
             anim.SetInteger("Run", 1);
         }
 
-
-
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
@@ -69,10 +102,8 @@ public class ThirdPersonMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 
-    // this script pushes all rigidbodies that the character touches
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        
         Rigidbody body = hit.collider.attachedRigidbody;
 
         if (hit.gameObject.CompareTag("Collectible"))
@@ -80,12 +111,11 @@ public class ThirdPersonMovement : MonoBehaviour
             Debug.Log("Chomp");
             hit.transform.parent = this.gameObject.transform;
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Interaction/ItemCollect", GetComponent<Transform>().position);
-            hit.transform.parent = GameObject.Find("TrueBackpack").transform;
+            hit.transform.parent = GameObject.Find("InsideTheBackpack").transform;
             hit.transform.localPosition = new Vector3(0f, 0f, 0f);
             body.isKinematic = false;
             body.useGravity = true;
             //hit.transform.position = this.gameObject.transform.position + new Vector3(5f, 2f, 0f);
-
         }
 
         // no rigidbody
