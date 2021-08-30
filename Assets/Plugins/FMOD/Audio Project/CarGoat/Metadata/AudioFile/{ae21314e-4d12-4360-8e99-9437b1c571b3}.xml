@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{ae21314e-4d12-4360-8e99-9437b1c571b3}">
+		<property name="assetPath">
+			<value>Epic Goat V1.2 (131bpm, Dm).wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>130.53435416666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2ffce4b6-114c-47e6-b110-2fb7f51da9af}</destination>
+		</relationship>
+	</object>
+</objects>
