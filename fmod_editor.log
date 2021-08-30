@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000013CC2E9D878 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001D8BD16DA08 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,12 +18,127 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] SoundI::release                          : Post Modern Goat (0000013CC1B69498)
-[LOG] SoundI::release                          :     Post Modern Goat (0000013BDF796378)
-[LOG] SoundI::release                          :     Post Modern Goat (0000013CC1B6AC38)
-[LOG] SoundI::release                          : Wind (0000013CC1B68568)
-[LOG] SoundI::release                          :     Wind (0000013BDF7961D8)
-[LOG] SoundI::release                          :     Wind (0000013CC1B69648)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001D88122CEE8 : node = 000001D7F69602A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001D8B8C72678.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D88122CEE8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 39088544
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D7F69603B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Click 1', format=5, channels=2, frequency=48000, lengthbytes=129984, lengthpcm=570000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.314026.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D88122CEE8
+[LOG] SystemI::createSound                     : filename = Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001D8812298E8 : node = 000001D7F69603E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001D8B8C72678.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D8812298E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 39088544
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D7F69604F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Totes McGoats', format=5, channels=2, frequency=48000, lengthbytes=982272, lengthpcm=3889152, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.481628.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D8812298E8
+[LOG] SoundI::release                          : Goata Get Outta Here (000001D8B8DEC618)
+[LOG] SoundI::release                          :     Goata Get Outta Here (000001D8B592E068)
+[LOG] SoundI::release                          :     Goata Get Outta Here (000001D8B8DEC108)
+[LOG] SystemI::createSound                     : filename = Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001D8812242D8 : node = 000001D7F6960520
+[LOG] SystemI::createSound                     : add node to async list : head = 000001D8B8C72678.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D8812242D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 39088544
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D7F6960630
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Click 1', format=5, channels=2, frequency=48000, lengthbytes=129984, lengthpcm=570000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.314026.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D8812242D8
+[LOG] SystemI::createSound                     : filename = Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001D8B8DE8448 : node = 000001D7F6960660
+[LOG] SystemI::createSound                     : add node to async list : head = 000001D8B8C72678.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D8B8DE8448
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 39088544
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D7F6960770
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001D7C5970AA8 : node = 000001D7F6960160
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001D8B8C72678.  list count = 0
+[LOG] SystemI::createSound                     :     filename = Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001D7C59714C8 : node = 000001D8BD273E50
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001D8B8C72678.  list count = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Post Modern Goat', format=5, channels=2, frequency=48000, lengthbytes=1486944, lengthpcm=5869440, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.795776.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D8B8DE8448
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D7C5970AA8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 39088544
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D7F6960270
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Seashore', format=5, channels=2, frequency=48000, lengthbytes=3424736, lengthpcm=12264192, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.225891.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D7C5970AA8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D7C59714C8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 39088544
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D8BD273F60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Wind', format=5, channels=2, frequency=48000, lengthbytes=22935040, lengthpcm=86435712, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.189484.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D7C59714C8
+[LOG] SoundI::release                          : Totes McGoats (000001D8812298E8)
+[LOG] SoundI::release                          :     Totes McGoats (000001D8B592E6E8)
+[LOG] SoundI::release                          :     Totes McGoats (000001D88122A9C8)
+[LOG] SoundI::release                          : Wind (000001D7C59714C8)
+[LOG] SoundI::release                          :     Wind (000001D8B59295A8)
+[LOG] SoundI::release                          :     Wind (000001D7C5971EE8)
+[LOG] SoundI::release                          : Click 1 (000001D88122CEE8)
+[LOG] SoundI::release                          :     Click 1 (000001D8B592E548)
+[LOG] SoundI::release                          :     Click 1 (000001D88122B8F8)
+[LOG] SoundI::release                          : Click 1 (000001D8812242D8)
+[LOG] SoundI::release                          :     Click 1 (000001D8B592E068)
+[LOG] SoundI::release                          :     Click 1 (000001D88121FF58)
+[LOG] SoundI::release                          : Seashore (000001D7C5970AA8)
+[LOG] SoundI::release                          :     Seashore (000001D8B5928568)
+[LOG] SoundI::release                          :     Seashore (000001D7C59725A8)
+[LOG] SoundI::release                          : Post Modern Goat (000001D8B8DE8448)
+[LOG] SoundI::release                          :     Post Modern Goat (000001D8B59283C8)
+[LOG] SoundI::release                          :     Post Modern Goat (000001D7C59719D8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
