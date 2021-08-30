@@ -46,9 +46,14 @@ public class TextWriter : MonoBehaviour {
     bOutside = fDistance > clearOnDistance;
 
     if (bOutside) {
-      randInt = Random.Range(0, text.Length);
+      
       bWrite = false;
     }
+
+    if (bWrite == false)
+        {
+            randInt = Random.Range(0, text.Length);
+        }
     if (bInside) {
       bWrite = true;
     }

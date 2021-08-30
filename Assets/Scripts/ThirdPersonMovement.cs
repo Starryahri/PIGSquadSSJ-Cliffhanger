@@ -123,7 +123,7 @@ public class ThirdPersonMovement : MonoBehaviour
         // Updates the Text in the UI Timer Panel
         if (this.UITimer != null)
         {
-            Timer = Time.time;
+            Timer = Time.timeSinceLevelLoad;
             minutes = (int)Timer;
             minutes = minutes / 60;
             seconds = (int)Timer;
