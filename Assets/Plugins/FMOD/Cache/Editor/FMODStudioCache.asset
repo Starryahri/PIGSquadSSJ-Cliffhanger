@@ -23,7 +23,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-6809313225425018417
+--- !u!114 &-6890148120481243968
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38,10 +38,10 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637658867772316037
+  lastModified: 637658533685048792
   FileSizes:
   - Name: Desktop
-    Value: 1084
+    Value: 942
   Exists: 1
 --- !u!114 &-6537400601574327316
 MonoBehaviour:
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 3266228907220038567}
-  - {fileID: -6809313225425018417}
+  - {fileID: -6890148120481243968}
   EditorEvents:
   - {fileID: -7153022815055727868}
   - {fileID: -3621909040634568388}
@@ -266,8 +266,8 @@ MonoBehaviour:
   MasterBanks:
   - {fileID: 3266228907220038567}
   StringsBanks:
-  - {fileID: -6809313225425018417}
-  stringsBankWriteTime: 637658867772316037
+  - {fileID: -6890148120481243968}
+  stringsBankWriteTime: 637658533685048792
   cacheVersion: 8
 --- !u!114 &1715997177742961265
 MonoBehaviour:
@@ -327,7 +327,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637658867772306063
+  lastModified: 637658533685028796
   FileSizes:
   - Name: Desktop
     Value: 35542176
