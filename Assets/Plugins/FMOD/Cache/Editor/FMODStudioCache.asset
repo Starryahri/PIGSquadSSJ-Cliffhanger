@@ -23,6 +23,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-6809313225425018417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637658867772316037
+  FileSizes:
+  - Name: Desktop
+    Value: 1084
+  Exists: 1
 --- !u!114 &-6537400601574327316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,8 +77,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/A Goat Named Rosita
   guid: af3ccfb2e6577242a6d40fc9e8777d5b
-  Banks:
-  - {fileID: 3266228907220038567}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -111,6 +130,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-3273974581754291766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Totes McGoats
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Totes McGoats
+  guid: e1f09b724cc9914a85bb21c8d379cc1f
+  Banks:
+  - {fileID: 3266228907220038567}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-1926166819024032033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +173,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 762
   Exists: 0
+--- !u!114 &-1396776926791591418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Goata Get Outta Here
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Goata Get Outta Here
+  guid: 9640e0fdbc1d2248bf5655924ef9be5c
+  Banks:
+  - {fileID: 3266228907220038567}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-1171926904155815790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,19 +252,22 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 8391027459021754583}
   - {fileID: 3266228907220038567}
+  - {fileID: -6809313225425018417}
   EditorEvents:
-  - {fileID: -6250063545857960255}
   - {fileID: -7153022815055727868}
   - {fileID: -3621909040634568388}
   - {fileID: 1715997177742961265}
+  - {fileID: 3684090169306422811}
+  - {fileID: -1396776926791591418}
+  - {fileID: 6099824253137724158}
+  - {fileID: -3273974581754291766}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3266228907220038567}
   StringsBanks:
-  - {fileID: 5588142693425680096}
-  stringsBankWriteTime: 637656873748065751
+  - {fileID: -6809313225425018417}
+  stringsBankWriteTime: 637658867772316037
   cacheVersion: 8
 --- !u!114 &1715997177742961265
 MonoBehaviour:
@@ -259,10 +327,10 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637658001011877681
+  lastModified: 637658867772306063
   FileSizes:
   - Name: Desktop
-    Value: 2110912
+    Value: 35542176
   Exists: 1
 --- !u!114 &3656083147916771038
 MonoBehaviour:
@@ -284,6 +352,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2046592
   Exists: 0
+--- !u!114 &3684090169306422811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Random Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Random Music
+  guid: 6b05734c016fbc43b1afd1185e83093b
+  Banks:
+  - {fileID: 3266228907220038567}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &5588142693425680096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,6 +395,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 746
   Exists: 0
+--- !u!114 &6099824253137724158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambient/Wind
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ambient/Wind
+  guid: be597eb74cbe3a47a64e81a7d180966a
+  Banks:
+  - {fileID: 3266228907220038567}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &8391027459021754583
 MonoBehaviour:
   m_ObjectHideFlags: 0
