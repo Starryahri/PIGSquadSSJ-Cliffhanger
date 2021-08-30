@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Environmental_test 1
+  m_Name: Water
   m_Shader: {fileID: 4800000, guid: 0717917ee9a78eb4491cd021efe50ae9, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f7973976799eb6843bcb25e25e25522e, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -65,23 +65,23 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 5.65
+    - _Glossiness: -3
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RimAmount: 0.744
-    - _RimThreshold: 0.249
+    - _RimAmount: 0.48
+    - _RimThreshold: 0.41
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _AmbientColor: {r: 0.18867922, g: 0.13211921, b: 0.10946955, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _AmbientColor: {r: 0.3025098, g: 0.3677218, b: 0.6226415, a: 1}
+    - _Color: {r: 0.32208967, g: 0.66091126, b: 0.8867924, a: 0.89411765}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RimColor: {r: 0.101960786, g: 0.101960786, b: 0.101960786, a: 1}
-    - _SpecularColor: {r: 0.1792453, g: 0.05833927, b: 0.05833927, a: 1}
+    - _RimColor: {r: 0.1882353, g: 0.1882353, b: 0.1882353, a: 1}
+    - _SpecularColor: {r: 0.2254902, g: 0.2254902, b: 0.2254902, a: 1}
   m_BuildTextureStacks: []
