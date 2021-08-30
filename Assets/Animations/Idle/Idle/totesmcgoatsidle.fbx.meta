@@ -9,7 +9,87 @@ ModelImporter:
   - first:
       74: -1186175002919557899
     second: rig|run
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: button
+    second: {fileID: 2100000, guid: 44c1880877bff31429ad20c6b1381479, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: earring
+    second: {fileID: 2100000, guid: 9c4c6efb31ec58941af7293f6785a149, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyecolor
+    second: {fileID: 2100000, guid: 4fa50dee114e3c04698289fb4f26cc86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: goat
+    second: {fileID: 2100000, guid: c35138128b1fd0f46ae800ce4dd0242f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: goatee
+    second: {fileID: 2100000, guid: 763befc3de13f1444ae5701297a64a7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gums
+    second: {fileID: 2100000, guid: e1c809ab8d9adc34f83c619012f3019e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hooves
+    second: {fileID: 2100000, guid: f09be46e00e49d148a227ce8a4436077, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: horns
+    second: {fileID: 2100000, guid: 473d75e6c1c1e4b45a824019833eff56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: horns2
+    second: {fileID: 2100000, guid: 90f73b982b6af64408dd13a8a0b323a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jorts
+    second: {fileID: 2100000, guid: 8a40e58996f6ecc40b9045147bd56bf3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jortslower
+    second: {fileID: 2100000, guid: 2c0ebca991374d04cac41ed31bfb0986, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jortsshading
+    second: {fileID: 2100000, guid: b1bc2d94d6a93a34aac96f7be906c086, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lids
+    second: {fileID: 2100000, guid: 6269990f941b635498fc0dd670f1d8c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mouth
+    second: {fileID: 2100000, guid: d208bb85b6ce6024187ab443aa84a164, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pupil
+    second: {fileID: 2100000, guid: 34e699d2b5056e1478cee0c6d2c046b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: teeth
+    second: {fileID: 2100000, guid: afaed3fae920fc94c91e78a5fbf9417f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

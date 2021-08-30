@@ -9,7 +9,27 @@ ModelImporter:
   - first:
       74: 1303299601406483602
     second: Armature|run
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: backpack
+    second: {fileID: 2100000, guid: d88e36fefcf8a67498cae15eebdb9a7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: backpackinterior
+    second: {fileID: 2100000, guid: 006b776ab1c184345b5965512453476c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: backpackrim
+    second: {fileID: 2100000, guid: 94478df58b1e6f142a7c5fdd56dcfe2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: handles
+    second: {fileID: 2100000, guid: 7e13717b8fde7c04a846c254bedc2b45, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
