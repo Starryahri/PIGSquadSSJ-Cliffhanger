@@ -4,22 +4,18 @@ using UnityEngine;
 
 public class GoatSpeak : MonoBehaviour
 {
-    public TextWriter endSpeech;
+    public Transform TargetToLook = null;
+    public bool invert = false;
     // Start is called before the first frame update
-    void Start()
+    private void Reset()
     {
-        endSpeech = GetComponent<TextWriter>();
-        string test = endSpeech.text[0];
-        Debug.Log(test);
+        TargetToLook = Camera.main.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
+        transform.rotation = invert ? Quaternion.LookRotation(-TargetToLook.forward, TargetToLook.up) : TargetToLook.rotation;
     }
 
-    IEnumerator WaitForWords()
-    {
-        yield return new WaitForSeconds(10);
-    }
 }
