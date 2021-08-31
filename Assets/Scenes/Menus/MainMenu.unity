@@ -15907,7 +15907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75e3fa99ac70154d9414db26acdff34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 0.005
+  rotateSpeed: 0.17
 --- !u!4 &2082764198 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7247797596844542579, guid: 3cd3c4f481db8944195f9bc8b7d8f8d4,
@@ -16561,6 +16561,37 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622551006722008770, guid: 96f09ae107bb6274cbf0825aa4bccecd,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622551006722008770, guid: 96f09ae107bb6274cbf0825aa4bccecd,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 20f732e882da9354093010ec697e778e,
+        type: 3}
+    - target: {fileID: 5622551006722008770, guid: 96f09ae107bb6274cbf0825aa4bccecd,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622551006722008781, guid: 96f09ae107bb6274cbf0825aa4bccecd,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 306.514
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622551006722008781, guid: 96f09ae107bb6274cbf0825aa4bccecd,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622551006722008781, guid: 96f09ae107bb6274cbf0825aa4bccecd,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 135
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96f09ae107bb6274cbf0825aa4bccecd, type: 3}
