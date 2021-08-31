@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using Cinemachine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
@@ -43,13 +42,6 @@ public class ThirdPersonMovement : MonoBehaviour
     private int minutes = 0;
     private int seconds = 0;
 
-    // Holders for Textboxes
-    public GameObject box1;
-    public GameObject box2;
-    public GameObject box3;
-    public GameObject box4;
-    public GameObject box5;
-    public GameObject box6;
 
     void Start()
     {
@@ -63,6 +55,7 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         //This looks in backpack parent and counts the items inside
         float backpackCount = go.transform.childCount;
+        Debug.Log(backpackCount);
 
         _vCamControl.m_Orbits[1].m_Radius = 12 + (backpackCount); 
 
@@ -157,12 +150,12 @@ public class ThirdPersonMovement : MonoBehaviour
 
         if (hit.gameObject.CompareTag("Collectible"))
         {
-            //Debug.Log("Chomp");
+            Debug.Log("Chomp");
             hit.transform.parent = this.gameObject.transform;
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Interaction/ItemCollect", GetComponent<Transform>().position);
             hit.transform.parent = GameObject.Find("InsideTheBackpack").transform;
             //hit.transform.parent = GameObject.Find("TrueBackpack").transform;
-            hit.transform.localPosition = new Vector3(0f, 2f, 0f);
+            hit.transform.localPosition = new Vector3(0f, 0f, 0f);
             body.isKinematic = false;
             body.useGravity = true;
             //hit.transform.position = this.gameObject.transform.position + new Vector3(5f, 2f, 0f);
@@ -189,42 +182,5 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             return;
         }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.CompareTag("GoatBoss"))
-        {
-            Debug.Log("You've come to the wrong neighborhood kid >:<");
-            StartCoroutine(Ending());
-        }
-        
-
-    }
-
-    IEnumerator Ending()
-    {
-        yield return new WaitForSeconds(2);
-        box1.SetActive(true);
-        yield return new WaitForSeconds(4);
-        box1.SetActive(false);
-        box2.SetActive(true);
-        yield return new WaitForSeconds(4);
-        box2.SetActive(false);
-        box3.SetActive(true);
-        yield return new WaitForSeconds(4);
-        box3.SetActive(false);
-        box4.SetActive(true);
-        yield return new WaitForSeconds(4);
-        box4.SetActive(false);
-        box5.SetActive(true);
-        yield return new WaitForSeconds(4);
-        box5.SetActive(false);
-        box6.SetActive(true);
-        yield return new WaitForSeconds(1);
-        anim.SetTrigger("BYE");
-        yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("Credits");
-        //anim.Play("GoatFlying");
     }
 }

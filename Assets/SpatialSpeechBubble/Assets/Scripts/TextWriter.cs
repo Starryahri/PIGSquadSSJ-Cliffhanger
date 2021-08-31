@@ -14,7 +14,6 @@ public class TextWriter : MonoBehaviour {
   //public string text = "POP UP!\nHello World.";
   public string[] text;
   public int randInt;
-    public int arrIndex = 0;
   //public static int randint = Random.Range(0, text.Length);
   //private int randnum = Random.Range(0, text.Length);
   //public string[] text = new string[1] {"HI THIS IS A TEST"};
@@ -23,7 +22,7 @@ public class TextWriter : MonoBehaviour {
   private string writedText = "";
   private int letterIndex = 0;
 
-  public float fDistance;
+  private float fDistance;
   private bool bInside = false;
   private bool bOutside = false;
   private bool bWrite = false;
@@ -41,7 +40,6 @@ public class TextWriter : MonoBehaviour {
 
   private void
   Update () {
-
     fDistance = (target.position - origin.position).magnitude;
 
     bInside = fDistance < activateOnDistance;
@@ -54,9 +52,7 @@ public class TextWriter : MonoBehaviour {
 
     if (bWrite == false)
         {
-            //arrIndex++;
-            //arrIndex = Mathf.Clamp(arrIndex, 0, text.Length-1);
-            //randInt = Random.Range(0, text.Length);
+            randInt = Random.Range(0, text.Length);
         }
     if (bInside) {
       bWrite = true;
@@ -73,7 +69,6 @@ public class TextWriter : MonoBehaviour {
       writedText = "";
       timePassed = 0.0f;
       letterIndex = 0;
-
     }
 
     targetTextMesh.text = writedText;
@@ -94,11 +89,6 @@ public class TextWriter : MonoBehaviour {
       }
       ++letterIndex;
     }
-
-    if(letterIndex == text[randInt].Length)
-        {
-            arrIndex++;
-        }
   }
 
   //text
@@ -130,8 +120,7 @@ public class TextWriter : MonoBehaviour {
   public void
   setText(string newText) {
     text[randInt] = newText;
-        arrIndex++;
-    }
+  }
 /*
   private void OnValidate() {
     if (origin == null) {

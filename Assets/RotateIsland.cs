@@ -13,7 +13,7 @@ public class RotateIsland : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         transform.Rotate(new Vector3(0f, rotateSpeed, 0f));
 

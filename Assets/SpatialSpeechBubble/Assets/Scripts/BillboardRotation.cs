@@ -13,7 +13,9 @@ public class BillboardRotation : MonoBehaviour {
 
   private void
   LateUpdate () {
-    transform.rotation = invert ? Quaternion.LookRotation(-TargetToLook.forward, TargetToLook.up) : TargetToLook.rotation;
+    transform.rotation = invert ?
+                           Quaternion.LookRotation(-TargetToLook.forward, TargetToLook.up) :
+                           TargetToLook.rotation;
   }
 
   private void

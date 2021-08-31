@@ -16032,7 +16032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75e3fa99ac70154d9414db26acdff34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 0.17
+  rotateSpeed: 0.005
 --- !u!4 &2082764198 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7247797596844542579, guid: 3cd3c4f481db8944195f9bc8b7d8f8d4,
@@ -16687,6 +16687,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 5622551005749355193, guid: 96f09ae107bb6274cbf0825aa4bccecd,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -16792,5 +16793,7 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of 55eb2fa (Last minute polishes and game ending sequence)
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96f09ae107bb6274cbf0825aa4bccecd, type: 3}
