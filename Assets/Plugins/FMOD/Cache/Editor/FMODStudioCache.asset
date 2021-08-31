@@ -60,7 +60,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637659509151733689
+  lastModified: 637659539890713781
   FileSizes:
   - Name: Desktop
     Value: 1240
@@ -428,7 +428,7 @@ MonoBehaviour:
   - {fileID: 3266228907220038567}
   StringsBanks:
   - {fileID: -6890148120481243968}
-  stringsBankWriteTime: 637659509151733689
+  stringsBankWriteTime: 637659539890713781
   cacheVersion: 8
 --- !u!114 &96215376181617934
 MonoBehaviour:
@@ -475,7 +475,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2000
+  Length: 3080
 --- !u!114 &1777056746042451547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,10 +511,10 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637659509151723684
+  lastModified: 637659539890703770
   FileSizes:
   - Name: Desktop
-    Value: 40575744
+    Value: 40572800
   Exists: 1
 --- !u!114 &3656083147916771038
 MonoBehaviour:

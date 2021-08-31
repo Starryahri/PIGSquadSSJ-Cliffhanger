@@ -129,9 +129,9 @@
 	<object class="MixerBusPanner" id="{4bbba2d0-d8f0-4900-965c-9372323c18c4}" />
 	<object class="MultiSound" id="{ba393197-5ba9-424f-94dc-642ece08ba8d}">
 		<relationship name="sounds">
-			<destination>{cd694186-f8dd-45fc-9173-1c291a48bab0}</destination>
-			<destination>{9907ce52-081e-4b85-9550-697171722730}</destination>
-			<destination>{a56269e9-2083-4dfd-8444-49c731b593f0}</destination>
+			<destination>{2e99e601-93b6-4b6d-94c2-b35c9f2abe3f}</destination>
+			<destination>{c64f23ae-914c-4c76-ab6f-5930551a3d01}</destination>
+			<destination>{3f9d0bdf-4e1b-461b-852d-9434933c8b9f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{f63188a3-1100-4f4b-af9e-be06ffd64b22}" />
@@ -142,19 +142,19 @@
 	</object>
 	<object class="MixerBusPanner" id="{c1502083-c6ad-480e-843d-9a6848539636}" />
 	<object class="MixerBusFader" id="{1c7e1591-d426-4224-86b8-5ca6c8bb767e}" />
-	<object class="SingleSound" id="{cd694186-f8dd-45fc-9173-1c291a48bab0}">
+	<object class="SingleSound" id="{2e99e601-93b6-4b6d-94c2-b35c9f2abe3f}">
 		<relationship name="audioFile">
-			<destination>{eaed61a2-2312-4a0e-b7ad-9cd2dac0e2f8}</destination>
+			<destination>{e1854dd5-0a88-46f2-93f7-21c8d929f3b7}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{9907ce52-081e-4b85-9550-697171722730}">
+	<object class="SingleSound" id="{c64f23ae-914c-4c76-ab6f-5930551a3d01}">
 		<relationship name="audioFile">
-			<destination>{d9f59497-f17a-46e6-8056-2270a3e87490}</destination>
+			<destination>{b622b5dd-75ca-4b18-8499-a84b18b8b266}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{a56269e9-2083-4dfd-8444-49c731b593f0}">
+	<object class="SingleSound" id="{3f9d0bdf-4e1b-461b-852d-9434933c8b9f}">
 		<relationship name="audioFile">
-			<destination>{01b9d01a-bc8e-4df4-bdd5-999bf3e1461c}</destination>
+			<destination>{06d0b427-5b69-4a5b-909d-451825ba3c54}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{e599bf06-74b6-4dee-9b2f-19eaaaac4b3a}" />
