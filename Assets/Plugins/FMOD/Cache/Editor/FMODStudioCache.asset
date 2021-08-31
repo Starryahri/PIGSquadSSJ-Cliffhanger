@@ -1,5 +1,27 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8003945470081616590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/New Event
+  m_EditorClassIdentifier: 
+  Path: event:/New Event
+  guid: 71ed236ab81200478bfc17a0e083f178
+  Banks: []
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-7153022815055727868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,10 +60,10 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637659391368813357
+  lastModified: 637659539890713781
   FileSizes:
   - Name: Desktop
-    Value: 1020
+    Value: 1240
   Exists: 1
 --- !u!114 &-6537400601574327316
 MonoBehaviour:
@@ -197,6 +219,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-1957306674220559387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambient/Waves
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ambient/Waves
+  guid: 71ed236ab81200478bfc17a0e083f178
+  Banks:
+  - {fileID: 3266228907220038567}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1926166819024032033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,6 +262,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 762
   Exists: 0
+--- !u!114 &-1819930125616616805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Credits
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Credits
+  guid: d0a73c3e7e029841b32d8555cd25174c
+  Banks:
+  - {fileID: 3266228907220038567}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-1396776926791591418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,6 +350,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-851091585847299855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interaction/Menu Open
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Interaction/Menu Open
+  guid: e2e2646aadf0e541b627b74fda063191
+  Banks:
+  - {fileID: 3266228907220038567}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-164466576807686720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,13 +418,41 @@ MonoBehaviour:
   - {fileID: -5758598123854273999}
   - {fileID: -981870971391734968}
   - {fileID: 4071533393194458449}
+  - {fileID: -1957306674220559387}
+  - {fileID: -851091585847299855}
+  - {fileID: 8654089362357169928}
+  - {fileID: -1819930125616616805}
+  - {fileID: 96215376181617934}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3266228907220038567}
   StringsBanks:
   - {fileID: -6890148120481243968}
-  stringsBankWriteTime: 637659391368813357
+  stringsBankWriteTime: 637659539890713781
   cacheVersion: 8
+--- !u!114 &96215376181617934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interaction/BAHH
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Interaction/BAHH
+  guid: 4620b8d6952ad04193b32321793fb855
+  Banks:
+  - {fileID: 3266228907220038567}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 620
 --- !u!114 &1715997177742961265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,7 +475,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2000
+  Length: 3080
 --- !u!114 &1777056746042451547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,10 +511,10 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637659391368753343
+  lastModified: 637659539890703770
   FileSizes:
   - Name: Desktop
-    Value: 35541088
+    Value: 40572800
   Exists: 1
 --- !u!114 &3656083147916771038
 MonoBehaviour:
@@ -462,6 +581,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &4073405825384662910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BAHH
+  m_EditorClassIdentifier: 
+  Path: event:/BAHH
+  guid: 4620b8d6952ad04193b32321793fb855
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 620
 --- !u!114 &5588142693425680096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,6 +702,29 @@ MonoBehaviour:
   Path: event:/GoatSong
   guid: af3ccfb2e6577242a6d40fc9e8777d5b
   Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &8654089362357169928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interaction/Menu Click
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Interaction/Menu Click
+  guid: a6c61fc366403e4ea530328113249fb5
+  Banks:
+  - {fileID: 3266228907220038567}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
