@@ -60,10 +60,10 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637659390044745780
+  lastModified: 637659430823909847
   FileSizes:
   - Name: Desktop
-    Value: 1204
+    Value: 1240
   Exists: 1
 --- !u!114 &-6537400601574327316
 MonoBehaviour:
@@ -422,13 +422,37 @@ MonoBehaviour:
   - {fileID: -851091585847299855}
   - {fileID: 8654089362357169928}
   - {fileID: -1819930125616616805}
+  - {fileID: 96215376181617934}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3266228907220038567}
   StringsBanks:
   - {fileID: -6890148120481243968}
-  stringsBankWriteTime: 637659390044745780
+  stringsBankWriteTime: 637659430823909847
   cacheVersion: 8
+--- !u!114 &96215376181617934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Interaction/BAHH
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Interaction/BAHH
+  guid: 4620b8d6952ad04193b32321793fb855
+  Banks:
+  - {fileID: 3266228907220038567}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 620
 --- !u!114 &1715997177742961265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,10 +511,10 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637659390044735770
+  lastModified: 637659430823894840
   FileSizes:
   - Name: Desktop
-    Value: 39105088
+    Value: 39129696
   Exists: 1
 --- !u!114 &3656083147916771038
 MonoBehaviour:
@@ -557,6 +581,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &4073405825384662910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BAHH
+  m_EditorClassIdentifier: 
+  Path: event:/BAHH
+  guid: 4620b8d6952ad04193b32321793fb855
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 620
 --- !u!114 &5588142693425680096
 MonoBehaviour:
   m_ObjectHideFlags: 0
