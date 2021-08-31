@@ -38,7 +38,11 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< Updated upstream
   lastModified: 637658533685048792
+=======
+  lastModified: 637659436809459669
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 942
@@ -219,7 +223,11 @@ MonoBehaviour:
   - {fileID: 3266228907220038567}
   StringsBanks:
   - {fileID: -6890148120481243968}
+<<<<<<< Updated upstream
   stringsBankWriteTime: 637658533685048792
+=======
+  stringsBankWriteTime: 637659436809459669
+>>>>>>> Stashed changes
   cacheVersion: 8
 --- !u!114 &1715997177742961265
 MonoBehaviour:
@@ -279,7 +287,11 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Audio Project/CarGoat/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< Updated upstream
   lastModified: 637658533685028796
+=======
+  lastModified: 637659436809319666
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 2110912
