@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6073843941981840491}
   m_Layer: 0
   m_Name: book-red
-  m_TagString: Untagged
+  m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3005197306606359006}
-  m_LocalRotation: {x: -0.20356722, y: -0.6771705, z: -0.70494324, w: -0.05527712}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 64.43136, y: 8.41, z: 98.27898}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -68.785, y: 90, z: -257.752}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &1535886072796726465
 MeshFilter:
   m_ObjectHideFlags: 0
