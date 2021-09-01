@@ -1369,6 +1369,7 @@ MonoBehaviour:
   - {fileID: 4462496081017407688, guid: e0a3c3387b9008640a420170944633a5, type: 3}
   - {fileID: 7169367072966833380, guid: 07fa18a72d3741746b3ebf998e6a04e1, type: 3}
   - {fileID: 8037891973433785316, guid: d78269ed59683f544baca5faf4b3e8e4, type: 3}
+  - {fileID: 2241337765182841169, guid: 7c8adfde3430a8b48a38e14abd762483, type: 3}
   randnum: 0
   randomXPos: 0
 --- !u!4 &1839267406

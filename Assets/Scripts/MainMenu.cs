@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        Physics.gravity = new Vector3(0, 1, 0);
+        Physics.gravity = new Vector3(0, -8f, 0);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

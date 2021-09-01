@@ -13,7 +13,7 @@ public class CreditsSpawning : MonoBehaviour
     void Start()
     {
         Physics.gravity = new Vector3(0, -0.2f, 0);
-        Destroy(this.gameObject, 10);
+        Destroy(this.gameObject, 20);
     }
 
     // Update is called once per frame
